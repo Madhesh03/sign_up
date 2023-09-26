@@ -1,117 +1,151 @@
-.container{
-     display: flex;
-    flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif;
-    
+html{
+    color: black;
+    background-image: url(./img/sign.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.img-div{
-    height:1800px;
-    width: 1800px;
-    
-    font-size: 100px;
-    text-align: center;
-    background-image: url(/home/maddy/Downloads/newimg.webp);
-    background-size:cover;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    margin-left: 300px;
-    
-}
-.odin{
-    font-family:'Norse-Bold';
-    src: url(/home/maddy/Downloads/Norse-Bold.otf);
-    text-align: start;
-    margin-top: 140px;
-    padding-top: 200px;
 
-    
-   
+.container{
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;   
 }
+
 img{
-    height:200px;
+    height: 200px;
     margin-top: 100px;
     padding-top: 200px;
     padding-left: 250px;
-   
 }
+
 .para{
     font-size: 45px;
     margin-top: 200px;
-    margin-left: 100px;
-    padding-left: 100px;
-    padding-right: 933px;
-    
-
-    
+    margin-bottom: 150px;
+    text-align: center;   
 }
+
 .formcon{
     display: flex;
     flex-direction: row;
-   flex-wrap: wrap;
-  
-   
-    
+    flex-wrap: wrap;
+    padding-left: 650px;   
 }
+
 .part1>div{
-    margin:80px;
-    margin-left:200px ;
+    margin: 80px;
+    margin-left: 200px ;
 }
+
 .part2>div{
     margin: 80px;
     margin-left: 300px;
 }
+
 input{
     box-sizing: border-box;
     width: 500px;
-    height:60px;
+    height: 60px;
     display: block;
     border-radius: 8px;
     font-size: 30px;
+    background-color: black;
+    border:7px solid white;
+    color: white;
 }
+
 label{
     font-size: 30px;
-    font-family:'Courier New', Courier, monospace;
 }
+
 .let{
     font-weight: bolder;
     font-size: 50px;
-    padding-left:200px ;
+    padding-left: 700px ;
     margin-top: 150px;
 }
+
 em{
     font-style: italic;
 }
-button{
+
+#createaccount{
     width: 400px;
     height: 90px;
     font-size: 32px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    background-color:rgb(122, 29, 29);
-    color: antiquewhite;
+    background-color: black;
+    color: grey;
     border-radius: 20px;
-    margin-left: 200px;
-    margin-top: 100px;
+    cursor: pointer;
+    border: 2px solid red;
 }
+
+#createaccount:hover{
+    font-size: 34px;
+    transition: 0.2s;
+    color: gray;
+}
+
+#butdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 24em ;
+}
+
 .log{
     font-size: 30px;
-    margin-top: 70px;
-    margin-left: 200px;
+    color: grey;
+    align-items: center;
+    padding-top: 0.7em ;
+    font-weight: bolder;
 }
+
+#login{
+    font-size: 1em;
+    border: 0;
+    padding: 0;
+    background: 0;
+    cursor: pointer;
+    font-weight: bolder;
+    color: grey;
+    text-decoration: underline;
+}
+
+#login:hover{
+    color: red;
+}
+
 .log>em{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
-    color: brown;
+    color: white;
 }
 
 input:focus{
+    border-color: purple;
+}
 
- border-color: purple;
+#firstname{
+    padding-left: 75px;
 }
-input:invalid{
-    border-color:red;
+
+#lastname{
+    padding-left: 160px;
 }
-input:valid{
-    border-color: green;
+#password{
+    padding-left: 230px;
+}
+
+#phonenumber{
+    padding-left: 445px;
+}
+
+#email{
+    padding-left: 350px;
+}
+
+#confirmpassword{
+    padding-left: 280px;
 }
